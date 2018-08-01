@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Splash screen strings -->
-    <string name="loader_text">Hay! How Are You ?</string>
+    <string name="loader_text">How Are You ?</string>
 
     <string name="app_name">Hay</string>
 
