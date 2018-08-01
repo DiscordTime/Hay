@@ -1,16 +1,17 @@
 package br.com.hay.hay.Splash
 
-import android.app.Activity
+import android.content.Context
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import android.support.v4.content.ContextCompat.startActivity
 
 import br.com.hay.hay.Login.LoginActivity
 
-class SplashRouter : SplashContract.Router, AppCompatActivity() {
+class SplashRouter(context : Context) : SplashContract.Router {
 
-    override fun openLoginActivity() {
-        val intent = Intent(applicationContext, LoginActivity::class.java)
-        startActivity(intent)
-        finish()
+    private var mContext : Context = context
+
+    override fun goNext() {
+        val intent = Intent(mContext, LoginActivity::class.java)
+        mContext.startActivity(intent)
     }
 }

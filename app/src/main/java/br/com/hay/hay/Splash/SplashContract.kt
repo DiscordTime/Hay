@@ -9,9 +9,10 @@ class SplashContract {
     }
 
     interface Presenter : BasePresenter {
+        fun finish()
     }
 
     interface Router{
-        fun openLoginActivity()
+        fun goNext()
     }
 }
