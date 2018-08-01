@@ -5,14 +5,7 @@ import br.com.hay.hay.Base.BaseView
 
 class SplashContract {
 
-    interface View : BaseView<Presenter> {
-    }
+    interface View : BaseView<Presenter>
 
-    interface Presenter : BasePresenter {
-        fun finish()
-    }
-
-    interface Router{
-        fun goNext()
-    }
+    interface Presenter : BasePresenter
 }
