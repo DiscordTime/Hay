@@ -1,8 +1,16 @@
 <resources>
 
+    <!-- App strings -->
+    <string name="app_name">HAY</string>
+    
     <!-- Splash screen strings -->
     <string name="loader_text">How Are You ?</string>
-
-    <string name="app_name">Hay</string>
+    
+    <!-- Login screen strings -->
+    <string name="action_sign_in">Login</string>
+    <string name="create_account">Register</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="prompt_password">Senha</string>
+    <string name="prompt_email">Email</string>
 
 </resources>
