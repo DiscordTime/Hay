@@ -2,7 +2,6 @@ package br.com.hay.hay
 
 import android.content.Context
 import android.content.Intent
-import android.os.Handler
 
 import br.com.hay.hay.Login.LoginActivity
 

@@ -4,7 +4,7 @@
     <string name="app_name">HAY</string>
     
     <!-- Splash screen strings -->
-    <string name="loader_text">How Are You ?</string>
+    <string name="loader_text">How are you ?</string>
     
     <!-- Login screen strings -->
     <string name="action_sign_in">Login</string>
