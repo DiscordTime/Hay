@@ -1,9 +1,9 @@
-package br.com.hay.hay
+package br.com.hay.router
 
 import android.content.Context
 import android.content.Intent
 
-import br.com.hay.hay.Login.LoginActivity
+import br.com.hay.login.LoginActivity
 
 class Router(context : Context) {
 

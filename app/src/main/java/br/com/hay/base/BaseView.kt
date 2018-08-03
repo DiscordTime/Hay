@@ -1,4 +1,4 @@
-package br.com.hay.hay.Base
+package br.com.hay.base
 
 interface BaseView<T> {
     fun setPresenter(presenter: T)

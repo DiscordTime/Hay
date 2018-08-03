@@ -1,7 +1,7 @@
-package br.com.hay.hay.Splash
+package br.com.hay.splash
 
-import br.com.hay.hay.Base.BasePresenter
-import br.com.hay.hay.Base.BaseView
+import br.com.hay.base.BasePresenter
+import br.com.hay.base.BaseView
 
 class SplashContract {
 

@@ -1,4 +1,4 @@
-package br.com.hay.hay.Base
+package br.com.hay.base
 
 interface BasePresenter {
    fun start()

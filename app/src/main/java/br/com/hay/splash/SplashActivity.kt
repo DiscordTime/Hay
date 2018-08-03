@@ -1,12 +1,12 @@
-package br.com.hay.hay.Splash
+package br.com.hay.splash
 
 import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 
-import br.com.hay.hay.R
-import br.com.hay.hay.Router
+import br.com.hay.R
+import br.com.hay.router.Router
 
 class SplashActivity : AppCompatActivity(), SplashContract.View {
 

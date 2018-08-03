@@ -4,13 +4,13 @@
     <string name="app_name">HAY</string>
     
     <!-- Splash screen strings -->
-    <string name="loader_text">How are you ?</string>
+    <string name="splash_loader_text">How are you ?</string>
     
     <!-- Login screen strings -->
-    <string name="action_sign_in">Login</string>
-    <string name="create_account">Register</string>
-    <string name="forgot_password">Forgot password ?</string>
-    <string name="prompt_password">Senha</string>
-    <string name="prompt_email">Email</string>
+    <string name="login_action_sign_in">Login</string>
+    <string name="login_create_account">Register</string>
+    <string name="login_forgot_password">Forgot password ?</string>
+    <string name="login_prompt_password">Senha</string>
+    <string name="login_prompt_email">Email</string>
 
 </resources>

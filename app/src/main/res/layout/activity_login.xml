@@ -1,4 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,9 +9,9 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context=".Login.LoginActivity">
+    tools:context=".login.LoginActivity">
 
-    <!-- Login progress -->
+    <!-- login progress -->
     <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:layout_marginBottom="8dp" android:visibility="gone" />
@@ -58,7 +59,7 @@
                         android:id="@+id/txt_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/prompt_email"
+                        android:hint="@string/login_prompt_email"
                         android:inputType="textEmailAddress"
                         android:maxLines="1"
                         android:padding="8dp"
@@ -71,7 +72,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:hint="@string/prompt_password"
+                        android:hint="@string/login_prompt_password"
                         android:imeOptions="actionUnspecified"
                         android:inputType="textPassword"
                         android:maxLines="1"
@@ -98,7 +99,7 @@
                         android:layout_marginTop="2dp"
                         android:paddingLeft="2dp"
                         android:paddingTop="15dp"
-                        android:text="@string/forgot_password"
+                        android:text="@string/login_forgot_password"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
 
                     <TextView
@@ -113,7 +114,7 @@
                         android:paddingBottom="15dp"
                         android:paddingRight="2dp"
                         android:paddingTop="15dp"
-                        android:text="@string/create_account"
+                        android:text="@string/login_create_account"
                         android:clickable="true"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
                 </LinearLayout>
@@ -126,7 +127,7 @@
                     android:textColor="@color/black"
                     android:layout_marginTop="2dp"
                     android:background="@color/white"
-                    android:text="@string/action_sign_in"
+                    android:text="@string/login_action_sign_in"
                     />
 
             </LinearLayout>
@@ -134,4 +135,4 @@
 
     </ScrollView>
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

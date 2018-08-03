@@ -6,10 +6,10 @@
     android:layout_height="fill_parent"
     android:gravity="center"
     android:background="@color/colorPrimaryDark"
-    tools:context=".Splash.SplashActivity">
+    tools:context=".splash.SplashActivity">
 
     <ImageView
-        android:id="@+id/loader_img"
+        android:id="@+id/iv_splash_loader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -17,11 +17,11 @@
         />
 
     <TextView
-        android:id="@+id/loader_text"
+        android:id="@+id/tv_splash_loader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/loader_text"
+        android:text="@string/splash_loader_text"
         android:textColor="@color/white"
         android:textSize="25sp"
         />

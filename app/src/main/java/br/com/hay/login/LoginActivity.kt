@@ -1,8 +1,8 @@
-package br.com.hay.hay.Login
+package br.com.hay.login
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import br.com.hay.hay.R
+import br.com.hay.R
 
 class LoginActivity : AppCompatActivity() {
 

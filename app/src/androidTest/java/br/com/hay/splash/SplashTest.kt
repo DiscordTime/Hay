@@ -1,4 +1,4 @@
-package br.com.hay.hay
+package br.com.hay.splash
 
 import android.content.res.Resources
 import android.support.test.espresso.Espresso.onView
@@ -7,7 +7,7 @@ import android.support.test.espresso.matcher.ViewMatchers.*
 import android.support.test.filters.LargeTest
 import android.support.test.rule.ActivityTestRule
 import android.support.test.runner.AndroidJUnit4
-import br.com.hay.hay.Splash.SplashActivity
+import br.com.hay.R
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -34,19 +34,17 @@ class SplashTest () {
 
     @Test
     fun imgLoaderIsVisible(){
-        onView(withId(R.id.loader_img)).check(matches(isDisplayed()))
+        onView(withId(R.id.iv_splash_loader)).check(matches(isDisplayed()))
     }
 
     @Test
     fun textLoaderIsVisible(){
-        onView(withId(R.id.loader_text)).check(matches(isDisplayed()))
+        onView(withId(R.id.tv_splash_loader)).check(matches(isDisplayed()))
     }
 
     @Test
     fun textLoaderRigthText(){
-        var mLoaderText : String = "How are you ?"
-
-        onView(withId(R.id.loader_text)).check(matches(withText(mLoaderText)))
+        onView(withId(R.id.tv_splash_loader)).check(matches(withText(R.string.splash_loader_text)))
     }
 
 }

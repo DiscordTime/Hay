@@ -1,6 +1,4 @@
-package br.com.hay.hay.Splash
-
-import android.os.Handler
+package br.com.hay.splash
 
 class SplashPresenter : SplashContract.Presenter {
 
