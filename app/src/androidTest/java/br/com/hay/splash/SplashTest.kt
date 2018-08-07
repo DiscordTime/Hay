@@ -43,7 +43,7 @@ class SplashTest () {
     }
 
     @Test
-    fun textLoaderRigthText(){
+    fun textLoaderRight(){
         onView(withId(R.id.tv_splash_loader)).check(matches(withText(R.string.splash_loader_text)))
     }
 
