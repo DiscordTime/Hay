@@ -42,6 +42,30 @@
     },
     {
       "key": {
+        "uuid": "a2a18dfd_b667f45b",
+        "filename": "app/src/main/java/br/com/hay/login/LoginActivity.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1014755
+      },
+      "writtenOn": "2018-08-09T21:42:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7e73cb01_30956fa4",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 8
+      },
+      "revId": "e6c8037b1689cd754578bdc23848e257faaa5f0e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5028b552_e4bb2a3f",
         "filename": "app/src/main/java/br/com/hay/login/LoginActivity.kt",
         "patchSetId": 1
@@ -65,6 +89,30 @@
     },
     {
       "key": {
+        "uuid": "b15c5d0d_cfcced00",
+        "filename": "app/src/main/java/br/com/hay/login/LoginActivity.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1014755
+      },
+      "writtenOn": "2018-08-09T21:42:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5028b552_e4bb2a3f",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 5
+      },
+      "revId": "e6c8037b1689cd754578bdc23848e257faaa5f0e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8f42c8a3_b64373be",
         "filename": "app/src/main/java/br/com/hay/router/Router.kt",
         "patchSetId": 1
@@ -76,6 +124,30 @@
       "writtenOn": "2018-08-09T20:01:57Z",
       "side": 1,
       "message": "Considere mudar: IRouter.SPLASH_SCREEN.equals(from) \u0026\u0026 IRouter.SPLASH_SCREEN_FINISH.equals(event)",
+      "range": {
+        "startLine": 17,
+        "startChar": 12,
+        "endLine": 17,
+        "endChar": 92
+      },
+      "revId": "e6c8037b1689cd754578bdc23848e257faaa5f0e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e26ecf37_0f1cb5c7",
+        "filename": "app/src/main/java/br/com/hay/router/Router.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1014755
+      },
+      "writtenOn": "2018-08-09T21:42:01Z",
+      "side": 1,
+      "message": "Vamos mudar o padrão para escolha de rotas nos proximos commits",
+      "parentUuid": "8f42c8a3_b64373be",
       "range": {
         "startLine": 17,
         "startChar": 12,
@@ -128,6 +200,48 @@
     },
     {
       "key": {
+        "uuid": "367bd2a0_e38f1524",
+        "filename": "app/src/main/java/br/com/hay/router/Router.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1014755
+      },
+      "writtenOn": "2018-08-09T21:42:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e40679e3_9a172bcb",
+      "range": {
+        "startLine": 18,
+        "startChar": 53,
+        "endLine": 18,
+        "endChar": 54
+      },
+      "revId": "e6c8037b1689cd754578bdc23848e257faaa5f0e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8a91b9f3_6c0da759",
+        "filename": "app/src/main/java/br/com/hay/router/Router.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1014755
+      },
+      "writtenOn": "2018-08-09T21:42:01Z",
+      "side": 1,
+      "message": "Sera feito se necessario para mais activitys",
+      "parentUuid": "3cf63d22_444e47b1",
+      "revId": "e6c8037b1689cd754578bdc23848e257faaa5f0e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5bad0d68_04ecc5ae",
         "filename": "app/src/main/java/br/com/hay/splash/SplashActivity.kt",
         "patchSetId": 1
@@ -151,6 +265,30 @@
     },
     {
       "key": {
+        "uuid": "c7e411c5_27914bf0",
+        "filename": "app/src/main/java/br/com/hay/splash/SplashActivity.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1014755
+      },
+      "writtenOn": "2018-08-09T21:42:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5bad0d68_04ecc5ae",
+      "range": {
+        "startLine": 10,
+        "startChar": 65,
+        "endLine": 10,
+        "endChar": 80
+      },
+      "revId": "e6c8037b1689cd754578bdc23848e257faaa5f0e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "f492685e_40f707f7",
         "filename": "app/src/main/java/br/com/hay/splash/SplashActivity.kt",
         "patchSetId": 1
@@ -162,6 +300,30 @@
       "writtenOn": "2018-08-09T19:34:19Z",
       "side": 1,
       "message": "Coloque este método na BaseActivity.",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 5
+      },
+      "revId": "e6c8037b1689cd754578bdc23848e257faaa5f0e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4f781603_4a5cb64d",
+        "filename": "app/src/main/java/br/com/hay/splash/SplashActivity.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1014755
+      },
+      "writtenOn": "2018-08-09T21:42:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f492685e_40f707f7",
       "range": {
         "startLine": 39,
         "startChar": 0,
