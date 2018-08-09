@@ -1,0 +1,130 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b06477e8_6b6908c6",
+        "filename": "app/src/main/java/br/com/hay/ContextWrapperImpl.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2018-08-09T19:34:19Z",
+      "side": 1,
+      "message": "Criar um mapeamento das flags do android para que possamos usá-las aqui.",
+      "revId": "e6c8037b1689cd754578bdc23848e257faaa5f0e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7e73cb01_30956fa4",
+        "filename": "app/src/main/java/br/com/hay/login/LoginActivity.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2018-08-09T19:34:19Z",
+      "side": 1,
+      "message": "Remova os espacos vazios.",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 8
+      },
+      "revId": "e6c8037b1689cd754578bdc23848e257faaa5f0e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5028b552_e4bb2a3f",
+        "filename": "app/src/main/java/br/com/hay/login/LoginActivity.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2018-08-09T19:34:19Z",
+      "side": 1,
+      "message": "Colocar no BaseActivity.",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 5
+      },
+      "revId": "e6c8037b1689cd754578bdc23848e257faaa5f0e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3cf63d22_444e47b1",
+        "filename": "app/src/main/java/br/com/hay/router/Router.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2018-08-09T19:34:19Z",
+      "side": 1,
+      "message": "Fazer o mapeamento das flags.",
+      "revId": "e6c8037b1689cd754578bdc23848e257faaa5f0e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5bad0d68_04ecc5ae",
+        "filename": "app/src/main/java/br/com/hay/splash/SplashActivity.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2018-08-09T19:34:19Z",
+      "side": 1,
+      "message": "Cria uma BaseActivity que implementa a ActivityWrapper e estende dela em todas as outras.",
+      "range": {
+        "startLine": 10,
+        "startChar": 65,
+        "endLine": 10,
+        "endChar": 80
+      },
+      "revId": "e6c8037b1689cd754578bdc23848e257faaa5f0e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f492685e_40f707f7",
+        "filename": "app/src/main/java/br/com/hay/splash/SplashActivity.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2018-08-09T19:34:19Z",
+      "side": 1,
+      "message": "Coloque este método na BaseActivity.",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 5
+      },
+      "revId": "e6c8037b1689cd754578bdc23848e257faaa5f0e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
