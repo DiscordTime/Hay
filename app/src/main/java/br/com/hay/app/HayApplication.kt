@@ -1,19 +1,21 @@
 package br.com.hay.app
 
 import android.app.Application
-import android.content.Context
+import br.com.hay.ContextWrapper
+import br.com.hay.router.IRouter
 import br.com.hay.router.Router
 
 class HayApplication : Application() {
 
-    private var mRouter: Router? = null
+    private var mRouter: IRouter? = null
 
     override fun onCreate() {
         super.onCreate()
-        mRouter = Router(applicationContext)
+        mRouter = Router()
     }
 
-    fun getRouter() : Router?{
+    fun getRouter(contextWrapper: ContextWrapper) : IRouter?{
+        mRouter?.setContext(contextWrapper)
         return mRouter
     }
 

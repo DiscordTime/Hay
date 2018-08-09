@@ -1,29 +1,21 @@
 package br.com.hay.router
 
-import android.content.Context
-import android.content.Intent
-import android.util.Log
+import br.com.hay.ContextWrapper
 
 import br.com.hay.login.LoginActivity
 
-class Router(context : Context) {
+class Router : IRouter {
 
-    private var SplashScreen: Int = 1
-    private val SplashScreenFinishCount: String = "SplashFinish"
+    private lateinit var mContext : ContextWrapper
 
-    private var mContext : Context = context
+    override fun setContext(context: ContextWrapper) {
+        mContext = context
+    }
 
-    fun goNext(from : Int, event : String) {
 
-        if (from.equals(SplashScreen) && event.equals(SplashScreenFinishCount)){
-
-            val intent = Intent(mContext, LoginActivity::class.java)
-            mContext.startActivity(intent)
+    override fun goNext(from : Int, event : String) {
+        if (from.equals(IRouter.SPLASH_SCREEN) && event.equals(IRouter.SPLASH_SCREEN_FINISH)){
+            mContext.goNext(LoginActivity::class.java)
         }
     }
-
-    fun goBack(from: String){
-
-    }
-
 }
