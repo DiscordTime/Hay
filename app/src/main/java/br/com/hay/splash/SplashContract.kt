@@ -5,7 +5,7 @@ import br.com.hay.base.BaseView
 
 class SplashContract {
 
-    interface View : BaseView<Presenter>
+    interface View: BaseView<Presenter>
 
-    interface Presenter : BasePresenter
+    interface Presenter: BasePresenter<View>
 }
