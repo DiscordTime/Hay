@@ -1,6 +1,8 @@
 package br.com.hay.base
 
-interface BasePresenter {
-   fun start()
+interface BasePresenter<BaseView> {
+
+   fun start(baseView: BaseView)
    fun finish()
+
 }

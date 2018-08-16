@@ -2,15 +2,32 @@
 
     <!-- App strings -->
     <string name="app_name">HAY</string>
-    
+
     <!-- Splash screen strings -->
-    <string name="splash_loader_text">How are you ?</string>
-    
+    <string name="splash_loader_text">How are you?</string>
+
     <!-- Login screen strings -->
-    <string name="login_action_sign_in">Login</string>
-    <string name="login_create_account">Register</string>
-    <string name="login_forgot_password">Forgot password ?</string>
-    <string name="login_prompt_password">Senha</string>
-    <string name="login_prompt_email">Email</string>
+    <string name="login_title">Login</string>
+    <string name="login_action_sign_in">Sign in</string>
+    <string name="login_action_new_account">New here? Create an account!</string>
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="login_tint_password">Password</string>
+    <string name="login_tint_email">Email</string>
+    <string name="login_iv_hay_description">Hay Icon</string>
+
+    <!-- Forgot Password screen strings -->
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="forgot_password_action_send">Send</string>
+    <string name="forgot_password_tint_email">Email</string>
+    <string name="forgot_password_iv_hay_description">Hay Icon</string>
+
+    <!-- Register screen strings -->
+    <string name="register_title">Register</string>
+    <string name="register_action_send">Send</string>
+    <string name="register_tint_password">Password</string>
+    <string name="register_tint_email">Email</string>
+    <string name="register_tint_name">Name</string>
+    <string name="register_iv_hay_description">Hay Icon</string>
+
 
 </resources>
