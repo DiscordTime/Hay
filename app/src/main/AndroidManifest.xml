@@ -31,7 +31,6 @@
         <activity
             android:name=".forgotpassword.ForgotPasswordActivity"
             android:theme="@style/NoActionBarHayTheme"/>
-        </activity>
     </application>
 
 </manifest>
