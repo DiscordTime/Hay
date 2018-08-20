@@ -5,55 +5,48 @@ import android.view.View
 import android.widget.Button
 
 import br.com.hay.R
-import br.com.hay.app.HayApplication
 import br.com.hay.base.BaseActivity
 import br.com.hay.login.ForgotPasswordContract
 import br.com.hay.login.ForgotPasswordPresenter
-import br.com.hay.wrapper.ContextWrapperImpl
 
 import com.google.android.material.textfield.TextInputEditText
+import org.kodein.di.Kodein
+import org.kodein.di.generic.instance
 
 class ForgotPasswordActivity : BaseActivity(), ForgotPasswordContract.View, View.OnClickListener {
 
-    private lateinit var mPresenter: ForgotPasswordPresenter
+    override fun activityModule() = Kodein.Module("forgotPasswordActivity") {
+        import(forgotPasswordActivityModule())
+    }
+
+    private val mPresenter by instance<ForgotPasswordPresenter>()
     private lateinit var mEtEmail: TextInputEditText
     private lateinit var mBtSend: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
-        initComponents()
         initViews()
     }
 
     override fun onResume() {
         super.onResume()
-        mPresenter?.start(this)
+        mPresenter.resume(this)
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        mPresenter?.finish()
+    override fun onPause() {
+        super.onPause()
+        mPresenter.pause()
     }
 
     override fun onClick(view: View?) {
         when(view?.id) {
-            R.id.forgot_password_bt_send -> mPresenter.sendClick()
+            R.id.forgot_password_bt_send -> mPresenter?.sendClick()
         }
     }
 
     override fun getEmail(): String {
         return mEtEmail?.toString()
-    }
-
-    override fun setPresenter(presenter: ForgotPasswordContract.Presenter) {
-        mPresenter = presenter as ForgotPasswordPresenter
-    }
-
-    private fun initComponents() {
-        val mContextWrapper = ContextWrapperImpl(getActivityContext())
-        setPresenter(ForgotPasswordPresenter(
-                (application as HayApplication).getRouter(mContextWrapper)))
     }
 
     private fun initViews() {

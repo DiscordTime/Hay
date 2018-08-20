@@ -1,23 +1,17 @@
 package br.com.hay.app
 
 import android.app.Application
-import br.com.hay.wrapper.ContextWrapper
-import br.com.hay.router.IRouter
-import br.com.hay.router.Router
+import androidx.annotation.VisibleForTesting
+import org.kodein.di.Kodein
+import org.kodein.di.KodeinAware
 
-class HayApplication : Application() {
+class HayApplication : Application(), KodeinAware {
 
-    private var mRouter: IRouter? = null
+    @VisibleForTesting
+    var overrideBindings: Kodein.MainBuilder.() -> Unit = {}
 
-    override fun onCreate() {
-        super.onCreate()
-        mRouter = Router()
+    override val kodein = Kodein.lazy {
+        import(appModule(applicationContext))
     }
-
-    fun getRouter(contextWrapper: ContextWrapper) : IRouter?{
-        mRouter?.setContext(contextWrapper)
-        return mRouter
-    }
-
 
 }

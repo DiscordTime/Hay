@@ -5,14 +5,15 @@ import br.com.hay.base.BaseView
 
 class LoginContract {
 
-    interface View : BaseView<Presenter> {
+    interface View: BaseView {
         fun getEmail(): String
         fun getPassword(): String
     }
 
-    interface Presenter : BasePresenter<View> {
-        fun loginClick()
-        fun registerClick()
-        fun forgotPasswordClick()
+    abstract class Presenter: BasePresenter<View>() {
+        abstract fun loginClick()
+        abstract fun registerClick()
+        abstract fun forgotPasswordClick()
     }
+
 }

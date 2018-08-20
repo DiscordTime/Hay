@@ -1,18 +1,19 @@
 package br.com.hay.login
 
+import br.com.hay.base.BaseView
 import br.com.hay.router.IRouter
 
-class ForgotPasswordPresenter(private val router : IRouter?) :
-        ForgotPasswordContract.Presenter {
+class ForgotPasswordPresenter(private val router : IRouter?):
+        ForgotPasswordContract.Presenter() {
 
-    private var mView : ForgotPasswordContract.View? = null
-
-    override fun start(baseView: ForgotPasswordContract.View) {
-        mView = baseView
+    override fun resume(baseView: ForgotPasswordContract.View) {
+        super.resume(baseView)
+        //TODO
     }
 
-    override fun finish(){
-        mView = null
+    override fun pause(){
+        super.pause()
+        //TODO
     }
 
     override fun sendClick() {
