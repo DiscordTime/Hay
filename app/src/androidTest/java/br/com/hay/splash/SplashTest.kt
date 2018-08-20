@@ -1,12 +1,14 @@
 package br.com.hay.splash
 
 import android.content.res.Resources
+
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.filters.LargeTest
 import androidx.test.rule.ActivityTestRule
 import androidx.test.runner.AndroidJUnit4
+
 import br.com.hay.R
 import org.junit.Rule
 import org.junit.Test

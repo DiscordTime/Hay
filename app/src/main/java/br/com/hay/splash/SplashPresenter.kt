@@ -17,6 +17,5 @@ class SplashPresenter(private val router: IRouter?, private val delayHandler: ID
 
     override fun pause(){
         super.pause()
-        delayHandler?.destroy()
     }
 }

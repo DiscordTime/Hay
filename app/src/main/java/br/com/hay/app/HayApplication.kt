@@ -1,6 +1,7 @@
 package br.com.hay.app
 
 import android.app.Application
+
 import androidx.annotation.VisibleForTesting
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware

@@ -12,10 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         tools:ignore="GoogleAppIndexingWarning">
+
         <activity
             android:name=".splash.SplashActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/NoActionBarHayTheme">
+            android:theme="@style/NoActionBarHayTheme"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -30,7 +31,7 @@
         <activity
             android:name=".forgotpassword.ForgotPasswordActivity"
             android:theme="@style/NoActionBarHayTheme"/>
-
+        </activity>
     </application>
 
 </manifest>

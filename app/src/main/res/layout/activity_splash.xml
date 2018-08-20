@@ -35,5 +35,4 @@
         app:layout_constraintEnd_toEndOf="@+id/iv_splash_loader"
         app:layout_constraintStart_toStartOf="@+id/iv_splash_loader" />
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>

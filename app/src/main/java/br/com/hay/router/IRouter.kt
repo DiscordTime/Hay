@@ -10,7 +10,7 @@ interface IRouter {
         const val LOGIN_SCREEN_REGISTER: String = "login_screen_register"
         const val LOGIN_SCREEN_FORGOT_PASSWORD: String = "login_screen_forgot_password"
     }
-
+  
     fun goNext(from : Int, event : String)
 
 }
