@@ -1,16 +1,15 @@
 <resources>
 
-    <!-- Splash application theme. -->
+    <!-- No action bar application theme. -->
     <style
-        name="SplashTheme"
+        name="NoActionBarHayTheme"
         parent="Theme.AppCompat.NoActionBar">
     </style>
 
-    <!-- Login application theme. -->
+    <!-- Action bar application theme. -->
     <style
-        name="LoginTheme"
-        parent="Theme.AppCompat.NoActionBar">
-
+        name="ActionBarHayTheme"
+        parent="Theme.AppCompat">
     </style>
 
 </resources>
