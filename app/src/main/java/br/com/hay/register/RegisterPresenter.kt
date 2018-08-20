@@ -1,18 +1,16 @@
-package br.com.hay.login
+package br.com.hay.register
 
 import br.com.hay.router.IRouter
 
 class RegisterPresenter(private val router : IRouter?) :
-        RegisterContract.Presenter {
+        RegisterContract.Presenter() {
 
-    private var mView : RegisterContract.View? = null
-
-    override fun start(baseView: RegisterContract.View) {
-        mView = baseView
+    override fun resume(baseView: RegisterContract.View) {
+        super.resume(baseView)
     }
 
-    override fun finish(){
-        mView = null
+    override fun pause(){
+        super.pause()
     }
 
     override fun sendClick() {

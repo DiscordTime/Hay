@@ -5,11 +5,12 @@ import br.com.hay.base.BaseView
 
 class ForgotPasswordContract {
 
-    interface View : BaseView<Presenter> {
+    interface View: BaseView {
         fun getEmail(): String
     }
 
-    interface Presenter : BasePresenter<View> {
-        fun sendClick()
+    abstract class Presenter: BasePresenter<View>() {
+        abstract fun sendClick()
     }
+
 }

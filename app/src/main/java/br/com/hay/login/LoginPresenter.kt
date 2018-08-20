@@ -2,21 +2,19 @@ package br.com.hay.login
 
 import br.com.hay.router.IRouter
 
-class LoginPresenter(private val router : IRouter?) :
-        LoginContract.Presenter {
+class LoginPresenter(private val router: IRouter?, private val authUser: AuthUser?) :
+        LoginContract.Presenter() {
 
-    private var mView : LoginContract.View? = null
-
-    override fun start(baseView: LoginContract.View) {
-        mView = baseView
+    override fun resume(view: LoginContract.View) {
+        super.resume(view)
     }
 
-    override fun finish(){
-        mView = null
+    override fun pause() {
+        super.pause()
     }
 
     override fun loginClick() {
-        TODO("not implemented")
+
     }
 
     override fun registerClick() {

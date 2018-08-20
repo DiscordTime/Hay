@@ -5,16 +5,18 @@ import android.view.View
 import android.widget.Button
 
 import br.com.hay.R
-import br.com.hay.app.HayApplication
 import br.com.hay.base.BaseActivity
-import br.com.hay.login.RegisterContract
-import br.com.hay.login.RegisterPresenter
-import br.com.hay.wrapper.ContextWrapperImpl
 import com.google.android.material.textfield.TextInputEditText
+import org.kodein.di.Kodein
+import org.kodein.di.generic.instance
 
 class RegisterActivity : BaseActivity(), RegisterContract.View, View.OnClickListener {
 
-    private lateinit var mPresenter: RegisterPresenter
+    override fun activityModule() = Kodein.Module("registerActivity") {
+        import(registerActivityModule())
+    }
+
+    private val mPresenter by instance<RegisterPresenter>()
     private lateinit var mEtEmail: TextInputEditText
     private lateinit var mEtName: TextInputEditText
     private lateinit var mEtPassword: TextInputEditText
@@ -23,46 +25,35 @@ class RegisterActivity : BaseActivity(), RegisterContract.View, View.OnClickList
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_user)
-        initComponents()
         initViews()
     }
 
     override fun onResume() {
         super.onResume()
-        mPresenter?.start(this)
+        mPresenter.resume(this)
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        mPresenter?.finish()
+    override fun onPause() {
+        super.onPause()
+        mPresenter.pause()
     }
 
     override fun getName(): String {
-        return mEtName?.toString()
+        return mEtName.toString()
     }
 
     override fun getEmail(): String {
-        return mEtEmail?.toString()
+        return mEtEmail.toString()
     }
 
     override fun getPassword(): String {
-        return mEtPassword?.toString()
+        return mEtPassword.toString()
     }
 
     override fun onClick(view: View?) {
         when(view?.id) {
-            R.id.register_bt_send -> mPresenter?.sendClick()
+            R.id.register_bt_send -> mPresenter.sendClick()
         }
-    }
-
-    override fun setPresenter(presenter: RegisterContract.Presenter) {
-        mPresenter = presenter as RegisterPresenter
-    }
-
-    private fun initComponents() {
-        val mContextWrapper = ContextWrapperImpl(getActivityContext())
-        setPresenter(RegisterPresenter(
-                (application as HayApplication).getRouter(mContextWrapper)))
     }
 
     private fun initViews() {
