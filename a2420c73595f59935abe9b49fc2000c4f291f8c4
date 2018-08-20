@@ -22,6 +22,30 @@
       "revId": "a2420c73595f59935abe9b49fc2000c4f291f8c4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "922263ab_8dc32673",
+        "filename": ".circleci/config.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1014755
+      },
+      "writtenOn": "2018-08-20T20:02:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "72452955_44eac2a7",
+      "range": {
+        "startLine": 13,
+        "startChar": 2,
+        "endLine": 15,
+        "endChar": 20
+      },
+      "revId": "a2420c73595f59935abe9b49fc2000c4f291f8c4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
