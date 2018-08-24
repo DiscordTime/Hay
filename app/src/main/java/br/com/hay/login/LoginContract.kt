@@ -8,6 +8,7 @@ class LoginContract {
     interface View: BaseView {
         fun getEmail(): String
         fun getPassword(): String
+        fun showError(messge: String)
     }
 
     abstract class Presenter: BasePresenter<View>() {

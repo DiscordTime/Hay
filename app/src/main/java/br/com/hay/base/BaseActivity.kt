@@ -1,6 +1,7 @@
 package br.com.hay.base
 
 import android.app.Activity
+import android.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import br.com.hay.app.HayApplication
 import org.kodein.di.Kodein

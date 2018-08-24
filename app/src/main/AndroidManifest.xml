@@ -4,6 +4,8 @@
     package="br.com.hay">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".app.HayApplication"
         android:allowBackup="true"

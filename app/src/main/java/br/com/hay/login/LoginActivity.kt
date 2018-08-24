@@ -1,5 +1,6 @@
 package br.com.hay.login
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -50,11 +51,15 @@ class LoginActivity : BaseActivity(), LoginContract.View, View.OnClickListener {
     }
 
     override fun getEmail(): String {
-        return mEtEmail?.toString()
+        return mEtEmail.text.toString()
     }
 
     override fun getPassword(): String {
-        return mEtPassword?.toString()
+        return mEtPassword.text.toString()
+    }
+
+    override fun showError(message: String) {
+        AlertDialog.Builder(this).setMessage(message).setCancelable(false).show()
     }
 
     private fun initViews() {
