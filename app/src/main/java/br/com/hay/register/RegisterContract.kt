@@ -9,6 +9,7 @@ class RegisterContract {
         fun getName(): String
         fun getEmail(): String
         fun getPassword(): String
+        fun showError(message: String)
     }
 
     abstract class Presenter: BasePresenter<View>() {

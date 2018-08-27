@@ -1,16 +1,13 @@
 <resources>
 
     <!-- No action bar application theme. -->
-    <style
-        name="NoActionBarHayTheme"
-        parent="Theme.AppCompat.NoActionBar">
-    </style>
+    <style name="NoActionBarHayTheme" parent="Theme.AppCompat.NoActionBar"></style>
 
     <!-- Action bar application theme. -->
-    <style
-        name="ActionBarHayTheme"
-        parent="Theme.AppCompat">
+    <style name="ActionBarHayTheme" parent="Theme.AppCompat">
 
     </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light" />
 
 </resources>

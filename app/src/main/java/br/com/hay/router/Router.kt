@@ -26,6 +26,10 @@ class Router(private val mContext: Context) : IRouter {
                 && event.equals(IRouter.LOGIN_SCREEN_FINISH)) {
             val intent = Intent(mContext, SplashActivity::class.java)
             mContext.startActivity(intent)
+        } else if (from.equals(IRouter.REGISTER_SCREEN)
+                && event.equals(IRouter.REGISTER_SCREEN_FINISH)) {
+            val intent = Intent(mContext, LoginActivity::class.java)
+            mContext.startActivity(intent)
         }
     }
 }

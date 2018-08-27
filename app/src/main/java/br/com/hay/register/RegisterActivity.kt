@@ -1,5 +1,6 @@
 package br.com.hay.register
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -13,7 +14,7 @@ import org.kodein.di.generic.instance
 class RegisterActivity : BaseActivity(), RegisterContract.View, View.OnClickListener {
 
     override fun activityModule() = Kodein.Module("registerActivity") {
-        import(registerActivityModule())
+        import(registerActivityModule(app()))
     }
 
     private val mPresenter by instance<RegisterPresenter>()
@@ -39,21 +40,25 @@ class RegisterActivity : BaseActivity(), RegisterContract.View, View.OnClickList
     }
 
     override fun getName(): String {
-        return mEtName.toString()
+        return mEtName.text.toString()
     }
 
     override fun getEmail(): String {
-        return mEtEmail.toString()
+        return mEtEmail.text.toString()
     }
 
     override fun getPassword(): String {
-        return mEtPassword.toString()
+        return mEtPassword.text.toString()
     }
 
     override fun onClick(view: View?) {
         when(view?.id) {
             R.id.register_bt_send -> mPresenter.sendClick()
         }
+    }
+
+    override fun showError(message: String) {
+        AlertDialog.Builder(this).setMessage(message).setCancelable(false).show()
     }
 
     private fun initViews() {

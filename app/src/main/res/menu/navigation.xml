@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_person_outline_white_24dp"
+        android:title="@string/feelings_title_profile"
+        />
+
+    <item
+        android:id="@+id/navigation_feelings"
+        android:icon="@drawable/ic_today_white_24dp"
+        android:title="@string/feelings_title_feelings" />
+
+    <item
+        android:id="@+id/navigation_reports"
+        android:icon="@drawable/ic_report_white_24dp"
+        android:title="@string/feelings_title_reports" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="@string/feelings_title_settings" />
+
+</menu>

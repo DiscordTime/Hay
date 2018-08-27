@@ -29,5 +29,11 @@
     <string name="register_tint_name">Name</string>
     <string name="register_iv_hay_description">Hay Icon</string>
 
+    <!-- Feelings screen strings -->
+    <string name="feelings_title_profile">Profile</string>
+    <string name="feelings_title_feelings">Feelings</string>
+    <string name="feelings_title_reports">Reports</string>
+    <string name="feelings_title_settings">Settings</string>
+
 
 </resources>

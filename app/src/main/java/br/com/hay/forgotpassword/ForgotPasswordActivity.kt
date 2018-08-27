@@ -1,13 +1,12 @@
 package br.com.hay.forgotpassword
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 
 import br.com.hay.R
 import br.com.hay.base.BaseActivity
-import br.com.hay.login.ForgotPasswordContract
-import br.com.hay.login.ForgotPasswordPresenter
 
 import com.google.android.material.textfield.TextInputEditText
 import org.kodein.di.Kodein
@@ -16,7 +15,7 @@ import org.kodein.di.generic.instance
 class ForgotPasswordActivity : BaseActivity(), ForgotPasswordContract.View, View.OnClickListener {
 
     override fun activityModule() = Kodein.Module("forgotPasswordActivity") {
-        import(forgotPasswordActivityModule())
+        import(forgotPasswordActivityModule(app()))
     }
 
     private val mPresenter by instance<ForgotPasswordPresenter>()
@@ -47,6 +46,10 @@ class ForgotPasswordActivity : BaseActivity(), ForgotPasswordContract.View, View
 
     override fun getEmail(): String {
         return mEtEmail?.toString()
+    }
+
+    override fun showError(message: String) {
+        AlertDialog.Builder(this).setMessage(message).setCancelable(false).show()
     }
 
     private fun initViews() {
