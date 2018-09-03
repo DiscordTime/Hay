@@ -1,7 +1,7 @@
 <resources>
 
     <!-- No action bar application theme. -->
-    <style name="NoActionBarHayTheme" parent="Theme.AppCompat.NoActionBar"></style>
+    <style name="NoActionBarHayTheme" parent="Theme.AppCompat.NoActionBar" />
 
     <!-- Action bar application theme. -->
     <style name="ActionBarHayTheme" parent="Theme.AppCompat">

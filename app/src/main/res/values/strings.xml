@@ -36,4 +36,8 @@
     <string name="feelings_title_settings">Settings</string>
 
 
+    <!-- Images content descriptions -->
+    <string name="user_picture">User Picture</string>
+    <string name="camera">Camera</string>
+
 </resources>

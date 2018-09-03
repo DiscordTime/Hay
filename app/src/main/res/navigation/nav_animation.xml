@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_animation_feeling"
+    app:startDestination="@id/navigation_profile">
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="br.com.hay.feelings.ProfileFragment"
+        android:label="@string/feelings_title_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/navigation_feelings"
+        android:name="br.com.hay.feelings.FeelingFragment"
+        android:label="@string/feelings_title_feelings"
+        tools:layout="@layout/fragment_feeling" />
+    <fragment
+        android:id="@+id/navigation_reports"
+        android:name="br.com.hay.feelings.ReportFragment"
+        android:label="@string/feelings_title_reports"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="br.com.hay.feelings.SettingsFragment"
+        android:label="@string/feelings_title_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

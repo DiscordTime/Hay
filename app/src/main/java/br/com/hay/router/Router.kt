@@ -2,10 +2,10 @@ package br.com.hay.router
 
 import android.content.Context
 import android.content.Intent
+import br.com.hay.feelings.MainActivity
 import br.com.hay.forgotpassword.ForgotPasswordActivity
 import br.com.hay.login.LoginActivity
 import br.com.hay.register.RegisterActivity
-import br.com.hay.splash.SplashActivity
 
 class Router(private val mContext: Context) : IRouter {
 
@@ -24,7 +24,8 @@ class Router(private val mContext: Context) : IRouter {
             mContext.startActivity(intent)
         } else if (from.equals(IRouter.LOGIN_SCREEN)
                 && event.equals(IRouter.LOGIN_SCREEN_FINISH)) {
-            val intent = Intent(mContext, SplashActivity::class.java)
+            val intent = Intent(mContext, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             mContext.startActivity(intent)
         } else if (from.equals(IRouter.REGISTER_SCREEN)
                 && event.equals(IRouter.REGISTER_SCREEN_FINISH)) {
